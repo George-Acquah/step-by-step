@@ -1,0 +1,50 @@
+.brand {
+  color: var(--color-text);
+  font-family: "M PLUS Rounded 1c ", sans-serif;
+  display: flex;
+  font-size: 30px;
+  padding: 0rem 0.2rem;
+}
+
+.brand-logo {
+  margin-left: 2.5rem;
+}
+
+.brand-logo img {
+  width: 40px;
+  height: 50px;
+}
+
+.brand-name {
+  font-weight: 600;
+  color: #fff;
+  font-size: 30px;
+}
+
+/*low resolution tablets, mobiles (landscape)*/
+@media screen and (max-width: 700px) {
+  .brand-logo {
+    margin-left: 2rem;
+  }
+}
+
+/*smartphones mobiles (portrait)*/
+@media screen and (max-width: 550px) {
+  .brand {
+    color: var(--color-text);
+    font-family: "M PLUS Rounded 1c ", sans-serif;
+    display: flex;
+    font-size: 25px;
+    padding: 0rem 0.1rem;
+  }
+
+  .brand-logo {
+    margin-left: 1rem;
+  }
+
+  .brand-name {
+    font-weight: 500;
+    color: #fff;
+    font-size: 25px;
+  }
+}

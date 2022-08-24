@@ -1,0 +1,123 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+}
+
+.navbar-links {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.navbar-links p {
+  color: var(--color-text);
+  font-family: "M PLUS Rounded 1c ", sans-serif;
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin: 0 1rem;
+  text-decoration: none;
+}
+.navbar-sign {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0rem 1rem;
+}
+.navbar-sign button {
+  font-family: "M PLUS Rounded 1c ", sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  border: none;
+  outline: none;
+  border-radius: 7px;
+  background-color: rgb(15, 62, 67);
+  color: #ffffff;
+  margin-right: 0.5rem;
+  padding: 0.5rem 1rem;
+}
+.navbar-menu {
+  margin-left: 3rem;
+  display: none;
+  position: relative;
+}
+.navbar-menu svg {
+  cursor: pointer;
+}
+.navbar-toggle-menu {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  flex-direction: column;
+
+  text-align: end;
+  background: rgba(0, 150, 136, 1) 0%;
+  padding: 2rem;
+  position: absolute;
+  top: 40px;
+  right: 0;
+  margin-top: 1rem;
+  min-width: 210px;
+  border-radius: 5px;
+  outline: none;
+  /* BOX SHADOW */
+  -webkit-box-shadow: 0px 0px 7px 3px rgba(69, 96, 69, 1);
+  -moz-box-shadow: 0px 0px 7px 3px rgba(69, 96, 69, 1);
+  box-shadow: 0px 0px 7px 3px rgba(69, 96, 69, 1);
+}
+.navbar-toggle-menu-links p {
+  margin: 1rem 0rem;
+  color: #ffffff;
+}
+
+.navbar-toggle-menu-links-sign {
+  display: block;
+}
+
+/*tablets, ipads (portrait)*/
+@media screen and (max-width: 990px) {
+  .navbar-links {
+    display: none;
+  }
+  .navbar-toggle-menu-links p {
+    font-family: "M PLUS Rounded 1c ", sans-serif;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 500;
+  }
+  .navbar-toggle-menu-links-sign button{
+    display: none;
+  }
+  .navbar-menu {
+    display: flex;
+  }
+}
+
+/*low resolution tablets, mobiles (landscape)*/
+@media screen and (max-width: 700px) {
+  .navbar {
+    padding: 2rem 4rem;
+  }
+  .navbar-toggle-menu-links-sign button{
+    display: none;
+  }
+}
+
+/*smartphones mobiles (portrait)*/
+@media screen and (max-width: 550px) {
+  .navbar {
+    padding: 2rem;
+  }
+  .navbar-sign button {
+    display: none;
+  }
+  .navbar-toggle-menu {
+    top: 20px;
+    min-width: 200px;
+  }
+ 
+  .navbar-toggle-menu-links-sign button{
+    display: block;
+    margin: 0px;
+
+  }
+}

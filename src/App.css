@@ -1,38 +1,112 @@
-.App {
-  text-align: center;
+/*desktops - higher resolution*/
+/* @media (min-width: 1281px) */
+
+/*laptops, desktops*/
+/* @media (min-width: 1025px) and (max-width: 1280px)  */
+
+/*tablets, ipads (portrait)*/
+/* @media (min-width: 768px) and (max-width: 1024px) */
+
+/*tablets, ipads (landscape)*/
+/* @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) */
+
+/*low resolution tablets, mobiles (landscape)*/
+/* @media (min-width: 481px) and (max-width: 767px) */
+
+/*smartphones mobiles (portrait)*/
+/* @media (min-width: 320px) and (max-width: 480px) */
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.App{
+  background:var(--color-bg);
+  color: var(--color-text);
+  height: 100%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.App a{
+  color: unset;
+  text-decoration: none;
+}
+
+
+
+.gradient-background{
+    /* ff 3.6+ */
+    background:-moz-radial-gradient(circle at 18% 39%, rgb(0, 70, 150) 0%, rgba(14, 98, 107, 1) 51%, rgba(69, 96, 69, 1) 100%);
+
+    /* safari 5.1+,chrome 10+ */
+    background:-webkit-radial-gradient(circle at 18% 39%, rgba(0, 150, 136, 1) 0%, rgba(14, 98, 107, 1) 51%, rgba(69, 96, 69, 1) 100%);
+
+    /* opera 11.10+ */
+    background:-o-radial-gradient(circle at 18% 39%, rgba(0, 150, 136, 1) 0%, rgba(14, 98, 107, 1) 51%, rgba(69, 96, 69, 1) 100%);
+
+    /* ie 10+ */
+    background:-ms-radial-gradient(circle at 18% 39%, rgba(0, 150, 136, 1) 0%, rgba(14, 98, 107, 1) 51%, rgba(69, 96, 69, 1) 100%);
+
+    /* global 92%+ browsers support */
+    background:radial-gradient(circle at 18% 39%, rgba(0, 150, 136, 1) 0%, rgba(14, 98, 107, 1) 51%, rgba(69, 96, 69, 1) 100%);
+}
+
+.scale-up-center {
+	-webkit-animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+	        animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+
+
+ @-webkit-keyframes scale-up-center {
+    0% {
+      -webkit-transform: scale(0.5);
+              transform: scale(0.5);
+    }
+    100% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+    }
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  @keyframes scale-up-center {
+    0% {
+      -webkit-transform: scale(0.5);
+              transform: scale(0.5);
+    }
+    100% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+    }
   }
-  to {
-    transform: rotate(360deg);
+
+  .gradientText{
+    background: var(--gradient-text);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
-}
+
+  .section-margin{
+    margin: 4rem 6rem;
+  }
+  .section-padding{
+    padding: 4rem 6rem;
+  }
+  
+  @media screen and (max-width:700px) {
+    .section-margin{
+      margin: 4rem ;
+    }
+    .section-padding{
+      padding: 4rem ;
+    }
+  }
+  @media screen and (max-width:550px) {
+    .section-margin{
+      margin: 3rem 1.5rem;
+    }
+    .section-padding{
+      padding: 3rem 1.5rem;
+    }
+  }
+

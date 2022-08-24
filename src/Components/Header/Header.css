@@ -1,0 +1,155 @@
+/* Styling for the header component  */
+
+ .main-header{
+   display: flex;
+}
+
+.header-contents{
+    display: flex;
+    flex: 1;
+    margin-right: 3rem;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+}
+.header-contents h1{
+   font-family: var(--font-family);
+   font-weight: 700;
+   font-size: 60px;
+   line-height: 65px;
+   letter-spacing: -0.04em;
+}
+.header-contents p{
+   line-height: 34px;
+   font-family: var(--font-family);
+   font-style: normal;
+   font-weight: normal;
+   font-size: 20px;
+   line-height: 27px;
+   margin-top: 1.5em;
+   color: var(--color-text);
+}
+
+.header-image{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      box-shadow: 0px 1px 0px 0px #fff;
+      border-radius: 50%;
+      height: 380px;
+     width: 30vw;
+      margin: 0px 0px 0px 100px;
+} 
+.header-image img{
+   cursor: pointer;
+   height: 92%;
+   width: 92%;
+   background-size: cover;
+   background-position: center;
+   background-repeat: no-repeat;
+   border-radius: 50%;
+}
+.header-image img:hover{
+   transform: scale(1.07);
+   transition: 1s ease-out;
+}
+
+@media screen and (max-width:1050px) {
+   .main-header{
+      display: flex;
+      flex-direction: row;
+   }
+   .header-contents{
+      margin: 0 0 3rem;
+  }
+  
+.header-image{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   box-shadow: 0px 1px 0px 0px #fff;
+   border-radius: 50%;
+   height: 380px;
+  width: 50vw;
+   margin: 0px 0px 0px 40px;
+} 
+.header-image img{
+cursor: pointer;
+height: 92%;
+width: 92%;
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+border-radius: 50%;
+}
+.header-contents h1{
+   font-size: 50px;
+   line-height: 55px;
+}
+}
+
+@media screen and (max-width:700px) {
+   .main-header{
+      display: flex;
+      flex-direction: column-reverse;
+   }
+   .header-contents h1{
+      font-size: 42px;
+      line-height: 56px;
+   }
+   .header-contents p{
+      font-size: 16px;
+      line-height: 24px;
+   }
+   
+.header-image{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   box-shadow: 0px 1px 0px 0px #fff;
+   border-radius: 50%;
+   height: 380px;
+  width: 60vw;
+   margin: 0px 0px 0px 100px;
+} 
+.header-image img{
+cursor: pointer;
+height: 92%;
+width: 92%;
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+border-radius: 50%;
+}
+}
+
+@media screen and (max-width:550px) {
+   .header-contents h1{
+      font-size: 28px;
+      line-height: 42px;
+   }
+   .header-contents p{
+      font-size: 14px;
+      line-height: 24px;
+   }
+   
+.header-image{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   box-shadow: 0px 1px 0px 0px #fff;
+   border-radius: 50%;
+   height: 250px;
+  width: 60vw;
+   margin: 0px 0px 20px 50px;
+} 
+.header-image img{
+cursor: pointer;
+height: 92%;
+width: 92%;
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+border-radius: 50%;
+}
+}

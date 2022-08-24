@@ -1,0 +1,9 @@
+
+.services-container h1{
+    line-height: 34px;
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 72px;
+    letter-spacing: -0.04em;
+}

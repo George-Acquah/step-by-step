@@ -1,0 +1,154 @@
+.about-messages-container{
+    width: 100%;
+    display: grid;
+    margin: 1rem;
+}
+
+
+.about-messages-title{
+    max-width: 30vw;
+    margin-right: 2rem;
+    justify-content: flex-start;
+    align-items: center;
+    display: flex;
+}
+.about-messages-title h1{
+    font-family: var(--font-family);
+    max-width: 70vw;
+    font-size: 45px;
+    line-height: 56px;
+    font-weight: 700;
+    letter-spacing: -0.05rem;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+}
+.about-messages-title h1:hover{
+    border-bottom: 2px solid black;
+    font-weight: 800;
+}
+
+.about-messages-text{
+    margin-right: 2rem;
+    max-width: 70vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.about-messages-text p{
+    max-width: 70vw;
+    line-height: 30px;
+    font-size: 22px;
+    letter-spacing: -0.05rem;
+}
+
+/*tablets, ipads (portrait)*/
+@media screen and (max-width: 990px) {
+    .about-messages-container{
+        margin: 1rem ;
+        border-radius: 1rem;
+        padding: 0.5rem 0.8rem;
+        
+    }
+    .about-messages-title h1{
+        max-width: 60vw;
+        font-size: 38px;
+        line-height: 45px;
+        font-weight: 700;
+        letter-spacing: -0.05rem;
+
+    }
+    .about-messages-text{
+        flex-wrap: wrap;
+        margin-right: 2rem;
+        max-width: 70vw;
+        display: flex;
+        justify-content: space-between;
+        align-items: inherit;
+        font-size: large;
+
+    }
+  }
+  
+  /*low resolution tablets, mobiles (landscape)*/
+  @media screen and (max-width: 700px) {
+    .about-messages-container{
+        width: 100%;
+        flex-direction: column;
+        margin: 1rem 0.5rem;
+        border-radius: 1rem;
+        border-bottom: 3px solid #031b34;
+        border-right: 3px solid #031b34;
+        padding: 0.5rem 0.8rem;
+    }
+    .about-messages-title h1{
+        max-width: 60vw;
+        font-size: 32px;
+        line-height: 38px;
+        font-weight: 700;
+        letter-spacing: -0.05rem;
+    }
+    .about-messages-container:hover{
+        border-radius: 1.5rem;
+    }
+    .about-messages-title{
+        max-width: 100vw;
+        margin:0.3rem 1rem;
+    }
+    .about-messages-text{
+        justify-content: inherit;
+        margin:0.3rem 1rem;
+        max-width: 85vw;
+        display: flex;
+        font-size: large;
+    }
+    .about-messages-text p{
+        max-width: 70vw;
+        line-height: 27px;
+        font-size: 20px;
+        letter-spacing: 0.05rem;
+    }
+  }
+  
+  /*smartphones mobiles (portrait)*/
+  @media screen and (max-width: 550px) {
+    .about-messages-container{
+        flex-direction: column;
+        margin: 1rem 0.5rem;
+        border-radius: 1rem;
+        box-sizing: border-box;
+        border-bottom: 3px solid #031b34;
+        border-right: 3px solid #031b34;
+        padding: 0.5rem 0.8rem;
+    }
+    .about-messages-title h1{
+        max-width: 60vw;
+        font-size: 34px;
+        line-height: 45px;
+        font-weight: 500;
+        letter-spacing: -0.05rem;
+    }
+    .about-messages-container:hover{
+        border-radius: 1.5rem;
+    }
+    .about-messages-title{
+        max-width: 100vw;
+        margin:0.3rem 1rem;
+    }
+    .about-messages-text{
+        justify-content: inherit;
+        margin:0.3rem 1rem;
+        max-width: 85vw;
+        display: flex;
+        font-size: 16px;
+        line-height: 22px;
+        letter-spacing: -0.03rem;
+    }
+    .about-messages-text p{
+        max-width: 70vw;
+        line-height: 22px;
+        font-size: 18px;
+        letter-spacing: 0.05rem;
+    }
+  }
+
